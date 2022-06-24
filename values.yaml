@@ -1,0 +1,16 @@
+config:
+  guestbook_name: "my helm test v 1:0s"
+  backend_uri: "http://backend.minikube.local/guessbook"
+image: 
+  deploymentname: ccmsdeployment
+  containername: ccmsimage
+  image: nginx
+  replicas: 3
+  tag: 1:0
+  containerPort: 3000
+service:
+  servicename: ccmsservice
+  port: 80
+  type: nodePort
+  targetPort: 3000
+  nodePort: 30007

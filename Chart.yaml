@@ -1,0 +1,9 @@
+apiVersion: v2
+name: chart-deploy-new
+description: "sample deployment template"
+keywords:
+  - demo
+type: application
+appVersion: 1.16.0
+version: 0.1.0
+
